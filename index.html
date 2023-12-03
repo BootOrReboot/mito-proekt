@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="wholePage">
+      <nav class="navBar">
+        <div class="logoDiv">
+          <img class="img" src="./images/logoMito.png" alt="logo" />
+          <p>Ime na webstrana</p>
+        </div>
+        <div class="links">
+          <a href="./index.html">Home</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./about.html">About</a>
+        </div>
+      </nav>
+      <div class="mainPageBack">
+        <div class="mainPage">
+          <div class="introduction">
+            <p>Welcome to ime na webstranata</p>
+            <p>here you can see all the best foods in Macedonia</p>
+            <div
+              style="display: flex; align-items: center; flex-direction: row"
+            >
+              Want to add some click here:
+              <div class="addButton" onclick="redirect()">
+                <span>Add your Recipe</span>
+              </div>
+            </div>
+          </div>
+          <hr
+            style="
+              height: 3px;
+              width: 98%;
+              color: black;
+              margin: auto;
+              background-color: black;
+            "
+          />
+          <div class="sarmaPage">
+            <p>1. Sarma</p>
+            <div class="sarmaContent">
+              <img
+                style="width: 500px; height: 400px; padding-right: 15px"
+                src="./images/sarma.png"
+                alt="sarma"
+              />
+              <p>
+                One of the staples of traditional Turkish cuisine, sarma
+                consists of a filling that is snugly surrounded by leaves or
+                leafy vegetables.<br />
+                There are numerous versions of this dish but the mixture
+                typically combines ingredients such as minced meat, rice or
+                bulgur, various herbs, seasonings, red pepper, paprika, ground
+                sumac, or tomato sauce, while the typical wrapping usually
+                includes vine, cabbage, or sauerkraut leaves, or a variety of
+                leafy vegetables such as collard greens and swiss chard.
+              </p>
+            </div>
+          </div>
+          <div class="gravcePage">
+            <p style="display: flex; flex-direction: row-reverse">
+              2. Tavce gravce
+            </p>
+            <div class="gravceContent">
+              <img
+                src="./images/gravce.png"
+                alt="gravce"
+                style="width: 500px; height: 400px; padding-left: 15px"
+              />
+              <p>
+                Tavče gravče is the national dish of North Macedonia consisting
+                of beans stewed with onions, oil, dried pepper flakes, and
+                seasonings such as salt, parsley, and black pepper.<br />
+                Although it is primarily a vegetarian dish, some recipes call
+                for the addition of smoked pork, bacon, sausages, or suho
+                meso.<br />
+                The dish is baked in an earthenware bowl and usually served in
+                it, keeping the beans warm.<br />
+                Tavče gravče is traditionally enjoyed on Fridays or during
+                fasting (the original vegetarian recipe), but in restaurants, it
+                is often served as a side dish to grilled meats.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button onclick="test()">click for test</button>
+    </main>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

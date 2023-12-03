@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="wholePage">
+      <nav class="navBar">
+        <div class="logoDiv">
+          <img class="img" src="./images/logoMito.png" alt="logo" />
+          <p>Ime na webstrana</p>
+        </div>
+        <div class="links">
+          <a href="./index.html">Home</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./about.html">About</a>
+        </div>
+      </nav>
+      <div class="mainPageBack">
+        <div class="mainPage" style="height: 800px; width: 40%">
+          <div>
+            <div class="introduction" style="margin-bottom: 20px">
+              Time to make your recipe:
+            </div>
+            <form class="inputs">
+              <div>Enter the name:</div>
+              <input type="text" name="product" id="1" onchange="newRecipe()" />
+              <div>Enter the description:</div>
+              <input
+                type="text"
+                name="description"
+                id="2"
+                onchange="newRecipe()"
+              />
+              <div>Enter the image(URL):</div>
+              <input type="text" name="image" id="3" onchange="newRecipe()" />
+            </form>
+            <div class="confirmButton" onclick="finishedRecipe()">
+              <div><p>Confirm</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
