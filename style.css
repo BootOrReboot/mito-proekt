@@ -69,26 +69,35 @@
   flex-direction: column;
   align-items: center;
 }
-.sarmaPage {
+.leftContentPage {
   font-size: 60px;
   padding: 15px 50px 40px 20px;
 }
-.sarmaContent {
+.leftContent {
   border: 1px solid black;
 
   font-size: 28px;
   display: flex;
   background-color: rgba(255, 255, 255, 0.392);
 }
-.sarmaContent p {
+.leftContent p {
   display: flex;
   align-items: center;
 }
-.gravcePage {
+.leftContent img {
+  width: 500px;
+  height: 400px;
+  padding-right: 15px;
+}
+.rightContentPage {
   font-size: 60px;
   padding: 15px 50px 40px 20px;
 }
-.gravceContent {
+.rightContentPage p {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.rightContent {
   border: 1px solid black;
 
   font-size: 28px;
@@ -96,9 +105,14 @@
   background-color: rgba(255, 255, 255, 0.392);
   flex-direction: row-reverse;
 }
-.gravceContent p {
+.rightContent p {
   display: flex;
   align-items: center;
+}
+.rightContent img {
+  width: 500px;
+  height: 400px;
+  padding-left: 15px;
 }
 .addButton {
   height: 35px;
@@ -189,4 +203,542 @@
 }
 .confirmButton div p {
   z-index: 2;
+}
+@media (min-width: 1470px) and (max-width: 1770px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+  }
+  .rightContent {
+    border: 1px solid black;
+
+    font-size: 22px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: row-reverse;
+  }
+  .rightContent p {
+    display: flex;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 400px;
+    height: 300px;
+    padding-left: 15px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+  }
+  .leftContent {
+    border: 1px solid black;
+
+    font-size: 22px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+  }
+  .leftContent img {
+    width: 400px;
+    height: 300px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 1190px) and (max-width: 1470px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+  }
+  .rightContent {
+    border: 1px solid black;
+
+    font-size: 19px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: row-reverse;
+  }
+  .rightContent p {
+    display: flex;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 400px;
+    height: 300px;
+    padding-left: 15px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+  }
+  .leftContent {
+    border: 1px solid black;
+
+    font-size: 19px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+  }
+  .leftContent img {
+    width: 400px;
+    height: 300px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 910px) and (max-width: 1190px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContent {
+    border: 1px solid black;
+    width: 400px;
+
+    font-size: 19px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContent p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 50px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftContent {
+    border: 1px solid black;
+    width: 400px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .leftContent img {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .wholePage {
+    height: 300vh;
+    width: 100%;
+  }
+}
+@media (max-width: 910px) and (min-width: 720px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContent {
+    border: 1px solid black;
+    width: 400px;
+
+    font-size: 19px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContent p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftContent {
+    border: 1px solid black;
+    width: 400px;
+    font-size: 19px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .leftContent img {
+    width: 400px;
+    height: 300px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .wholePage {
+    height: 300vh;
+    width: 100%;
+  }
+  .introduction {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .addButton {
+    height: 25px;
+    margin: 8px 0px 0px 18px;
+    width: 150px;
+    font-size: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: rgb(199, 254, 0);
+    border-radius: 10px;
+    background-color: rgba(143, 143, 143, 0.5);
+    position: relative;
+    overflow: hidden;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .addButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+  }
+  .addButton:hover::before {
+    width: 100%;
+  }
+  .addButton span {
+    z-index: 1;
+  }
+  .navBar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    padding: 0px 50px 0px 20px;
+    background: rgb(253, 75, 29);
+    background: linear-gradient(
+      90deg,
+      rgba(253, 75, 29, 1) 21%,
+      rgba(252, 190, 69, 1) 100%
+    );
+    box-shadow: 0 4px 20px 1px gray;
+    z-index: 100;
+  }
+}
+@media (max-width: 720px) and (min-width: 530px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContent {
+    border: 1px solid black;
+    width: 300px;
+
+    font-size: 17px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContent p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftContent {
+    border: 1px solid black;
+    width: 300px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .leftContent img {
+    width: 300px;
+    height: 200px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .wholePage {
+    height: 300vh;
+    width: 100%;
+  }
+  .introduction {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .addButton {
+    height: 17px;
+    margin: 8px 0px 0px 18px;
+    width: 130px;
+    font-size: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: rgb(199, 254, 0);
+    border-radius: 10px;
+    background-color: rgba(143, 143, 143, 0.5);
+    position: relative;
+    overflow: hidden;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .addButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+  }
+  .addButton:hover::before {
+    width: 100%;
+  }
+  .addButton span {
+    z-index: 1;
+  }
+  .navBar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 0px 30px 0px 10px;
+    background: rgb(253, 75, 29);
+    background: linear-gradient(
+      90deg,
+      rgba(253, 75, 29, 1) 21%,
+      rgba(252, 190, 69, 1) 100%
+    );
+    box-shadow: 0 4px 20px 1px gray;
+    z-index: 100;
+  }
+}
+@media (max-width: 530px) and (min-width: 0px) {
+  .rightContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightContent {
+    border: 1px solid black;
+    width: 200px;
+
+    font-size: 15px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.392);
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightContent p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .rightContent img {
+    width: 200px;
+    height: 100px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+  }
+  .leftContentPage {
+    font-size: 40px;
+    padding: 15px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftContent {
+    border: 1px solid black;
+    width: 200px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.392);
+  }
+  .leftContent p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  .leftContent img {
+    width: 200px;
+    height: 100px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+  }
+  .wholePage {
+    height: 300vh;
+    width: 100%;
+  }
+  .introduction {
+    text-align: center;
+    font-size: 13px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .addButton {
+    height: 13px;
+    margin: 8px 0px 0px 18px;
+    width: 100px;
+    font-size: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    color: rgb(199, 254, 0);
+    border-radius: 10px;
+    background-color: rgba(143, 143, 143, 0.5);
+    position: relative;
+    overflow: hidden;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .addButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: width 0.5s ease-in-out;
+    z-index: 0;
+  }
+  .addButton:hover::before {
+    width: 100%;
+  }
+  .addButton span {
+    z-index: 1;
+  }
+  .navBar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    margin-bottom: 5px;
+    padding: 0px 30px 0px 10px;
+    background: rgb(253, 75, 29);
+    background: linear-gradient(
+      90deg,
+      rgba(253, 75, 29, 1) 21%,
+      rgba(252, 190, 69, 1) 100%
+    );
+    box-shadow: 0 4px 20px 1px gray;
+    z-index: 100;
+  }
 }
