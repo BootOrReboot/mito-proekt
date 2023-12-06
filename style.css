@@ -1,27 +1,47 @@
+/* '*' pretstavuva link koj dava still na site element vo html tagot */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+/* '.' e indicator deka se raboti za clasi a posle nego se pisuva imaeto na clasata */
 .wholePage {
+  /* heigth pretstavuva visina na elementot a posle nego se vnesuva kolku da bide visoko merni edinic ima mnogu a naj koristeni 
+  se %,px,vh,rem,em vo ovoj slucaj ni vnesuvame vh ili visual height so ni kazuva kolku da bide golemo vo odnos na viewportata i se meri vo procenti */
   height: 200vh;
+  /* width pretstavuva sirina na elemntot i nie vnesovme da bide 100 procenti od elmentot */
   width: 100%;
 }
 .navBar {
+  /* ovdeka nie koristime px ili pikseli */
   height: 70px;
   width: 100%;
+  /* display e element koj ni ovozmozuva da go promenime nacinot na koj se prikazuvaat elementite nie vnesuvame flex sto go pretvara elementot vo flexbox 
+  flexboxot e compliciran pa zatoa imam link na koj mozete da vidite kako raboti https://www.w3schools.com/css/css3_flexbox.asp */
   display: flex;
+  /* align items e bazirana vrz flex boxot kade gi podreduva elementint po y oskta na elemtnot vo ovoj slucaj vo sredina */
   align-content: center;
+  /* justify-content isto taka e ov flexboxot no ovoj gi podreduva po x oskata vo ovoj slucaj gi podreduv taka sto site lementi kje imat ednakov prostor */
   justify-content: space-between;
+  /* align-items gi pomestuva tekstot vnatre vo elementite vo ovoj slucaj na sredina  */
   align-items: center;
+  /* position pretstavuva kakva pozicija ima elementot po default e static ili staticna no vo ovoj 
+  slucaj turvime fixed sto znaci deka ignorira sve okolu nego i stoi na kade mu e bilo prethodno lokacijata */
   position: fixed;
+  /* top pretstaviv kade da se naogja elemtot vo ovoj slucaj e 0 sto znaci na pocetok od top ili gorna strana  */
   top: 0;
+  /* left e isto kako top samo sto tura se na pocetokot od levo */
   left: 0;
+  /* font family pretstavuv atribut kade go promenuva fontot na tekstot vo koj e specifikuvan */
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* font size ni kazuva kakva golemin da bide vo ovoj slucaj 24 pikseli */
   font-size: 24px;
+  /* margin e atribut koj pretstavuva bariera od elemnto i go otstranuva ementite okolu nego vo zavisnot od kolku mu 
+  nie zadademe vo ovoj slucaj nie mu kazuvame da gi otrgne elmentite na dnoto od elemntot */
   margin-bottom: 5px;
+  /* padding e atribut koj ni ovozmozuva da mrdame elementite vnatre vo elementot vo ovoj slucaj ni mu kazuvame da pomrden od desno kon levo za 100 pikseli
+  i od levo kon desno za 20pikseli */
   padding: 0px 100px 0px 20px;
   background: rgb(253, 75, 29);
   background: linear-gradient(
@@ -68,6 +88,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.aboutContent {
+  padding: 50px 30% 300px 30%;
+  font-size: 35px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 100%;
+  text-align: center;
+}
+.contactLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 20px 0px 0px 0px;
+}
+.contactLinks li {
+  padding: 20px;
+  margin: 0px 10px 100px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+}
+.contactLinks li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.contactContent {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .leftContentPage {
   font-size: 60px;

@@ -1,38 +1,81 @@
+<!-- !DOCtype kazuva kakov vid na document e -->
 <!DOCTYPE html>
+<!-- html lang="" pretstavuva html tag so opcija da dodades na koj jazik da raboti ("en"->english,"es"->espanol) -->
 <html lang="en">
+  <!-- head tagot e za glavnite raboti na webstrana okolu dimenziite glednata porta url adresata i koj prebaruvac se koristi -->
   <head>
+    <!-- charset UTF-8 e enkodiran kod na proevi pr. E2 B8 -->
     <meta charset="UTF-8" />
+    <!-- goleminata na viewportot i defaultna golemina na prebaruvacot -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link tagot e tag koj ovozmozuva povrzuvanje na dva fajlovi no najcesto se koristi so 
+    stilovi i css rel e relacija ili na sto da se povrze na href e lokacijata kade se naogja css fajlot -->
     <link rel="stylesheet" href="./style.css" />
+    <!-- title e naslov na stranicata -->
     <title>Document</title>
   </head>
+  <!-- body tagot e sve sto e vnatre vo htmlot potocno sve vo stranicata pod url adresata  -->
   <body>
-    <main class="wholePage">
+    <!-- main e tag koj oznacuva kako zamena za div ili body kolku da moze da se izmenuva bez da go osteti body tagot -->
+    <main>
+      <!-- nav tagot e kratenka za navigation sto se koristi za pravene na nav meni ovdeka se tura logot i linkovite  -->
+
+      <!-- class atributot se koristi da se oznaci nekoj classa na nekoj element so sto moze posle vo css fajlot 
+      da se oznaci so sto ovozmozuv pristap do taj tag -->
+
+      <!-- class navBar moze da se najde vo css fajlot style koj se naogja na adresata ./style -->
       <nav class="navBar">
+        <!-- div tagot e kratenka od division sto pretstavuva object kade moze da se vmetne sve tekst
+        slika broevi videa muzika itn isto taka moze i drugi tagovi i da se vmetne u vid na vgnezduvanje -->
+
+        <!-- class logoDiv moze da se najde vo css fajlot style koj se naogja na adresata ./style -->
         <div class="logoDiv">
+          <!-- img tagot e kratenka od image ili slika kade glavni atributi se src sto e kratenka od source ili izvor i alt kratenka od 
+          alternative kade se vnesuvu tekst koj kje se prikaze ako slikata od izvorot ne se prikaze ili vise ne postoi -->
+
+          <!-- img tagot i p tagot se vmesteni vnatre vo div tagot so classa logoDiv  -->
           <img class="img" src="./images/logoMito.png" alt="logo" />
+          <!-- p tagot e kratenka od paragraph koja se koristi SAMO za tekst pisuvanje -->
           <p>Лакоса</p>
         </div>
+        <!-- ovoj div tag e smesten nadvor od div tagot so classa logoDiv sto znaci deka toj div nema da ima vlijanie vrz ovoj div so classa links -->
         <div class="links">
+          <!-- a tagot e tag koj pretstavuva link do nekoja adressa moze da bide vnatre vo samata papka ili nekoj link do nekoja dr stranica na prebaruvacot -->
+
+          <!-- nikogas ne vgnezduvajte a tagovi -->
+
+          <!-- site ovia tagovi imaat href link kade e vnesena razlicna adressa na drugi html fajlovi sto znaci
+          pri klik na nekoj od ovie linkovi kje otvori html stranica so zapisanata lokacija -->
           <a href="./index.html">Home</a>
           <a href="./contact.html">Contact</a>
           <a href="./about.html">About</a>
         </div>
       </nav>
+      <!-- ovdeka im dobar primer na vgnezduvanje na divovi kade divot so classa mainPageBack e glavna na site 
+      pod nego div so classa mainPage e taka nareceno dete na divot so classa mainPageBack
+      a divot so classa introduction pretstavuva dete na divot so classa mainPage  -->
       <div class="mainPageBack">
         <div class="mainPage">
           <div class="introduction">
-            <p>Welcome to Лакоса</p>
-            <p>here you can see all the best foods in Macedonia</p>
+            <p>Добредојдовте на Лакоса</p>
+            <p>овде можете да ги видите сите најдобри јадења во Македонија</p>
+            <!-- vo ovoj div tag ima atribut style koj pretstavuva element koj na nego moze da se dodade site vidovi na 
+              stilovi od css programskiot jazik so sto se pisuvat vnatre pomegju ("") a za sekoj stil se zavrsuva so ; 
+              za da moze da se dodade nov still posle nego  -->
             <div
               style="display: flex; align-items: center; flex-direction: row"
             >
-              Want to add some click here:
+              Сакате да додадете свој рецепт кликнете овде:
+              <!-- vo divot so classa addButton ima i nekoj drug atribut koj se vika onclick ovoj atribut e 
+              poseben posto ovoj atribut ni ovozmozuva da povikame funkcija od strana na javascript vo ovoj slucaj 
+              ni povikuvame redirect()(zadolzitelno mora da se dodade "()" posto bez niv nema da e funkcija)
+              isto taka moze da se iskoristi i arrow funkcijata koj se izvsuva vaka ()=>{*ovdeka pisuvata sto da izvrsi funkcijata*} -->
               <div class="addButton" onclick="redirect()">
-                <span>Add your Recipe</span>
+                <span>Додадете рецепт</span>
               </div>
             </div>
           </div>
+          <!-- hr tagot pretstavuva tag koj ovozmozuva dodavanje na linija kolku da napravi nasata stranica da izgleda malce po moderno -->
           <hr
             style="
               height: 3px;
@@ -42,11 +85,15 @@
               background-color: black;
             "
           />
+          <!-- vo ovoj div imam nov atribut so ime id, id pretstavuva kratenka od identification so sto se vnesuva i moze da se iskoristi za still ili vo funkcii sto 
+          go praj ovaj atribut tolku poseben e sto id-to mora da bide unikatno samo za toj element ne smee da ima ist id na drug element, vo slucaj na toa id-to 
+          sto e prvo napisano bi rabotelo dodeka drugoto bi bilo ignorirano -->
           <div class="allProducts" id="products"></div>
         </div>
       </div>
-      <button onclick="test()">click for test</button>
     </main>
+    <!-- script tagot e tag koj pretstavuva element koj povrzuva javascript fajlovite so html fajlovite mor da se dodade src i da se napise lokacijata na 
+    javascript fajlot pri sto ovozmozuva pristap do site funkcii vo taj fajl kako na primer redirect funkcijata -->
     <script src="./scripts.js"></script>
   </body>
 </html>

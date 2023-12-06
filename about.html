@@ -7,18 +7,30 @@
     <title>Document</title>
   </head>
   <body>
-    <main class="mainPage">
-        <nav class="navBar">
-          <div class="logoDiv">
-            <img class="img" src="./images/logoMito.png" alt="logo" />
-            <p>Ime na webstrana</p>
+    <main>        
+        <div class="logoDiv">        
+          <img class="img" src="./images/logoMito.png" alt="logo" />
+          <p>Лакоса</p>
+        </div>        
+        <div class="links">         
+          <a href="./index.html">Home</a>
+          <a href="./contact.html">Contact</a>
+          <a href="./about.html">About</a>
+        </div>
+      </nav>
+      <!-- ovdeka im dobar primer na vgnezduvanje na divovi kade divot so classa mainPageBack e glavna na site 
+      pod nego div so classa mainPage e taka nareceno dete na divot so classa mainPageBack
+      a divot so classa aboutContent pretstavuva dete na divot so classa mainPage  -->
+      <div class="mainPageBack">
+        <div class="mainPage">
+          <div class="aboutContent">
+            Оваа страница е направена за да се раздознае убавината на република
+            македонија преку нејзините најпопуларни и вкусни јадења,Оваа
+            страница е изработена од Петар Митовски, Марио Пешовски, Марио
+            Георгиевски
           </div>
-          <div class="links">
-            <a href="./index.html">Home</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./about.html">About</a>
-          </div>
-        </nav>
-    <div>this is about</div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

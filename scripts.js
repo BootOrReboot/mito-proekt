@@ -3,14 +3,14 @@ function redirect() {
 }
 arrOfProducts = [
   {
-    name: "Sarma",
-    disc: "One of the staples of traditional Turkish cuisine, sarma consists of a filling that is snugly surrounded by leaves orleafy vegetables.There are numerous versions of this dish but the mixturetypically combines ingredients such as minced meat, rice orbulgur, various herbs, seasonings, red pepper, paprika, groundsumac, or tomato sauce, while the typical wrapping usuallyincludes vine, cabbage, or sauerkraut leaves, or a variety ofleafy vegetables such as collard greens and swiss chard.",
+    name: "Сарма",
+    disc: "Еден од основните елементи на традиционалната турска кујна, сармата се состои од фил кој е цврсто опкружен со лисја или лиснат зеленчук. Постојат бројни верзии на ова јадење, но смесата обично комбинира состојки како мелено месо, ориз или булгур, разни билки, зачини, црвен пипер. , пиперка, мелензумак или сос од домати, додека типичната обвивка обично вклучува лисја од винова лоза, зелка или кисела зелка, или разновиден лиснат зеленчук, како што се зелените и блитвата.",
     image: "./images/sarma.png",
     id: 1,
   },
   {
-    name: "Tavce gravce",
-    disc: "Tavče gravče is the national dish of North Macedonia consisting of beans stewed with onions, oil, dried pepper flakes, anseasonings such as salt, parsley, and black pepper.Although it is primarily a vegetarian dish, some recipes callfor the addition of smoked pork, bacon, sausages, or suhomeso.The dish is baked in an earthenware bowl and usually served init, keeping the beans warm.Tavče gravče is traditionally enjoyed on Fridays or during fasting (the original vegetarian recipe), but in restaurants, it is often served as a side dish to grilled meats.",
+    name: "Тавче гравче",
+    disc: "Тавче гравче е националното јадење на Северна Македонија кое се состои од грав динстан со кромид, масло, снегулки суви пиперки, зачини како сол, магдонос и црн пипер. сланина, колбаси или сухомесо. Јадењето се пече во земјена чинија и обично се служи во него, одржувајќи го гравот топол. Тавче гравче традиционално се ужива во петок или за време на постот (оригиналниот вегетаријански рецепт), но во рестораните често се служи како прилог за месо на скара.",
     image: "./images/gravce.png",
     id: 2,
   },
